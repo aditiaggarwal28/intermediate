@@ -1,5 +1,5 @@
 import json
-# from gtts import gTTS
+from gtts import gTTS
 import re
 
 parsed_content = ""
@@ -15,10 +15,8 @@ def text_to_audio(parsed_content):
     while ("  " in parsed_content):
         parsed_content = parsed_content.replace("  ", " ")
 
-    print(parsed_content)
-
-    # tts = gTTS(parsed_content)
-    # tts.save('D:/Documents/2019csb1063/dep/Class 11-20220328T192642Z-001/Class 11/Maths/Principles_of_mathematical_induction/audio.mp3')
+    tts = gTTS(parsed_content)
+    tts.save('class9/maths/ch1/audio.mp3')
 
 def text_checking(inp):
     """
@@ -83,7 +81,7 @@ def latex_parser(input_content):
     # print(input_content)
     util(content)
     #print(parsed_content)
-    file1 = open('D:/Documents/2019csb1063/dep/Class 11-20220328T192642Z-001/Class 11/Maths/Principles_of_mathematical_induction/converted_final.txt', 'w')
+    file1 = open('class9/maths/ch1/ans.txt', 'w')
     file1.write(parsed_content)
     file1.close()
     return parsed_content
@@ -316,25 +314,46 @@ def util(content):
                 parsed_content += "gamma"
 
             elif (content[i:i + 4] == "sqrt"):
-
+                
                 #file.write(" square root of ")
                 # global out
-                parsed_content = parsed_content + " square root of "
+                if(content[i+4] != '['):
+                    parsed_content = parsed_content + " square root of "
+                    j = i + 5
+                    li = ['{']
+                    while (li):
+                        if (j >= n):
+                            return 0
+                        if (content[j] == '{'):
+                            li.append('{')
+                        if (content[j] == '}'):
+                            li.pop()
+                        j = j + 1
+                    util(content[i + 5:j - 1])
+                    parsed_content += ","
+                    i = j
+                    flag = 0
+                else:
+                    if(content[i+5]=='3'):
+                        parsed_content = parsed_content + " cube root of "
+                    else:
+                        parsed_content = parsed_content + str(content[i+6])+ " th root of "
 
-                j = i + 5
-                li = ['{']
-                while (li):
-                    if (j >= n):
-                        return 0
-                    if (content[j] == '{'):
-                        li.append('{')
-                    if (content[j] == '}'):
-                        li.pop()
-                    j = j + 1
-                util(content[i + 5:j - 1])
-                parsed_content += ","
-                i = j
-                flag = 0
+                    j = i + 8
+                    li = ['{']
+                    while (li):
+                        if (j >= n):
+                            return 0
+                        if (content[j] == '{'):
+                            li.append('{')
+                        if (content[j] == '}'):
+                            li.pop()
+                        j = j + 1
+                    util(content[i + 8:j - 1])
+                    parsed_content += ","
+                    i = j
+                    flag = 0
+
 
             elif (content[i:i + 4] == "left"):
                 flag = 0
@@ -459,7 +478,7 @@ def util(content):
                             j = j + 1
                         i = j
                         is_firstrow = 1
-
+                    
                     if (content[i:i + 5] == "hline"
                             and content[i + 7:i + 10] != "end"):
 
@@ -469,6 +488,7 @@ def util(content):
                             parsed_content += " next row, "
                         i += 5
                         j = i
+                        print(content[j:j+5])
                         while (content[j:j + 5] != "hline"):
                             j += 1
 
@@ -610,7 +630,7 @@ def util(content):
     # print("hehe" + parsed_content)
     return 0
 
-file=open("D:/Documents/2019csb1063/dep/Class 11-20220328T192642Z-001/Class 11/Maths/Principles_of_mathematical_induction/scripted.txt",errors="ignore")
+file=open("class9/maths/ch1/text.txt",errors="ignore")
 input_content =file.read()
 # input_content="If $a$ is an element of a set $\mathrm{A}$, we say that \" $a$ belongs to $\mathrm{A}$ \" the Greek symbol $\in$ (epsilon) is used to denote the phrase 'belongs to'. Thus, we write $a \in \mathrm{A}$. If ' $b$ ' is not an element of a set A, we write $b \notin \mathrm{A}$ and read \" $b$ does not belong to A\"."
 
