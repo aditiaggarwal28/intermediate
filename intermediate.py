@@ -10,13 +10,13 @@ def text_to_audio(parsed_content):
     parsed_content = parsed_content.replace("+", " plus ")
     parsed_content = parsed_content.replace("/", " divided by ")
     parsed_content = re.sub(r'\n+', '\n', parsed_content).strip()
-    parsed_content = parsed_content.replace("\n", " , , . next line. ,, \n ")
+    parsed_content = parsed_content.replace("\n", " , ,  ,, .. ,,\n ")
 
     while ("  " in parsed_content):
         parsed_content = parsed_content.replace("  ", " ")
 
-    tts = gTTS(parsed_content)
-    tts.save('class9/maths/ch1/audio.mp3')
+    # tts = gTTS(parsed_content)
+    # tts.save('audio.mp3')
 
 def text_checking(inp):
     """
@@ -81,7 +81,7 @@ def latex_parser(input_content):
     # print(input_content)
     util(content)
     #print(parsed_content)
-    file1 = open('class9/maths/ch1/ans.txt', 'w')
+    file1 = open('ans.txt', 'w')
     file1.write(parsed_content)
     file1.close()
     return parsed_content
@@ -630,7 +630,7 @@ def util(content):
     # print("hehe" + parsed_content)
     return 0
 
-file=open("class9/maths/ch1/text.txt",errors="ignore")
+file=open("math.txt",errors="ignore")
 input_content =file.read()
 # input_content="If $a$ is an element of a set $\mathrm{A}$, we say that \" $a$ belongs to $\mathrm{A}$ \" the Greek symbol $\in$ (epsilon) is used to denote the phrase 'belongs to'. Thus, we write $a \in \mathrm{A}$. If ' $b$ ' is not an element of a set A, we write $b \notin \mathrm{A}$ and read \" $b$ does not belong to A\"."
 
