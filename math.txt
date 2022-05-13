@@ -1,0 +1,69 @@
+The symbol $\sin \mathrm{A}$ is used as an abbreviation for 'the sine of the angle A'. $\sin \mathrm{A}$ is not the product of 'sin' and A. 'sin' separated from A has no meaning. Similarly, $\cos \mathrm{A}$ is not the product of 'cos' and A. Similar interpretations follow for other trigonometric ratios also.
+
+Now, if we take a point $P$ on the hypotenuse $A C$ or a point $Q$ on $A C$ extended, of the right triangle $\mathrm{ABC}$ and draw $\mathrm{PM}$ perpendicular to $\mathrm{AB}$ and $\mathrm{QN}$ perpendicular to $\mathrm{AB}$ extended (see Fig. 8.6), how
+
+![](https://cdn.mathpix.com/cropped/2022_05_13_d562948748b8f9741526g-1.jpg?height=266&width=255&top_left_y=775&top_left_x=648)
+will the trigonometric ratios of $\angle \mathrm{A}$ in $\triangle \mathrm{PAM}$ differ from those of $\angle \mathrm{A}$ in $\triangle \mathrm{CAB}$ or from those of $\angle \mathrm{A}$ in
+
+Fig. 8.6 $\triangle$ QAN?
+
+To answer this, first look at these triangles. Is $\Delta$ PAM similar to $\Delta$ CAB? From Chapter 6, recall the AA similarity criterion. Using the criterion, you will see that the triangles PAM and $\mathrm{CAB}$ are similar. Therefore, by the property of similar triangles, the corresponding sides of the triangles are proportional.
+
+So, we have
+
+$$
+\frac{\mathrm{AM}}{\mathrm{AB}}=\frac{\mathrm{AP}}{\mathrm{AC}}=\frac{\mathrm{MP}}{\mathrm{BC}} .
+$$
+
+
+
+$$
+\begin{aligned}
+&\text { From this, we find } \quad \begin{aligned}
+\frac{\mathrm{MP}}{\mathrm{AP}} &=\frac{\mathrm{BC}}{\mathrm{AC}}=\sin \mathrm{A}
+\end{aligned} \\
+&\text { Similarly, } \quad \frac{\mathrm{AM}}{\mathrm{AP}}=\frac{\mathrm{AB}}{\mathrm{AC}}=\cos \mathrm{A}, \frac{\mathrm{MP}}{\mathrm{AM}}=\frac{\mathrm{BC}}{\mathrm{AB}}=\tan \mathrm{A} \text { and so on. }
+\end{aligned}
+$$
+
+This shows that the trigonometric ratios of angle A in $\triangle$ PAM not differ from those of angle A in $\triangle \mathrm{CAB}$.
+
+In the same way, you should check that the value of $\sin \mathrm{A}$ (and also of other trigonometric ratios) remains the same in $\triangle \mathrm{QAN}$ also.
+
+From our observations, it is now clear that the values of the trigonometric ratios of an angle do not vary with the lengths of the sides of the triangle, if the angle remains the same.
+
+Note : For the sake of convenience, we may write $\sin ^{2} \mathrm{~A}, \cos ^{2} \mathrm{~A}$, etc., in place of $(\sin \mathrm{A})^{2},(\cos \mathrm{A})^{2}$, etc., respectively. But $\operatorname{cosec} \mathrm{A}=(\sin \mathrm{A})^{-1} \neq \sin ^{-1} \mathrm{~A}$ (it is called sine inverse A). $\sin ^{-1} \mathrm{~A}$ has a different meaning, which will be discussed in higher classes. Similar conventions hold for the other trigonometric ratios as well. Sometimes, the Greek letter $\theta$ (theta) is also used to denote an angle.
+
+We have defined six trigonometric ratios of an acute angle. If we know any one of the ratios, can we obtain the other ratios? Let us see.
+
+![](https://cdn.mathpix.com/cropped/2022_05_13_d562948748b8f9741526g-2.jpg?height=158&width=783&top_left_y=794&top_left_x=135)
+
+$B C$ is equal to $k$, then AC will be $3 k$, where
+
+Fig. $8.7$ $k$ is any positive number. To determine other
+
+trigonometric ratios for the angle A, we need to find the length of the third side AB. Do you remember the Pythagoras theorem? Let us use it to determine the required length $\mathrm{AB}$.
+
+$$
+\mathrm{AB}^{2}=\mathrm{AC}^{2}-\mathrm{BC}^{2}=(3 k)^{2}-(k)^{2}=8 k^{2}=(2 \sqrt{2} k)^{2}
+$$
+
+Therefore,
+
+$$
+\mathrm{AB}=\pm 2 \sqrt{2} k
+$$
+
+So, we get
+
+$$
+\mathrm{AB}=2 \sqrt{2} k \quad \text { (Why is } \mathrm{AB} \text { not }-2 \sqrt{2} k \text { ?) }
+$$
+
+Now,
+
+$$
+\cos \mathrm{A}=\frac{\mathrm{AB}}{\mathrm{AC}}=\frac{2 \sqrt{2} k}{3 k}=\frac{2 \sqrt{2}}{3}
+$$
+
+Similarly, you can obtain the other trigonometric ratios of the angle A.

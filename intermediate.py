@@ -233,7 +233,32 @@ def util(content):
                 i = j
 
         if (flag == 1):
-            if(content[i:i+3]=="leq"):
+            if(content[i:i+3]=="sin"):
+                parsed_content += " sine of "
+                flag=0
+                i=i+4
+            elif(content[i:i+3]=="cos"):
+                parsed_content += " cos of "
+                flag=0
+                i=i+4
+            elif(content[i:i+3]=="tan"):
+                parsed_content += " tan of "
+                flag=0
+                i=i+4
+            
+            elif(content[i:i+3]=="sec"):
+                parsed_content += " secant of "
+                flag=0
+                i=i+4
+            elif(content[i:i+5]=="cosec"):
+                parsed_content += " cosecant of "
+                flag=0
+                i=i+6
+            elif(content[i:i+3]=="cot"):
+                parsed_content += " cot of "
+                flag=0
+                i=i+4
+            elif(content[i:i+3]=="leq"):
                 parsed_content += " less than or equal to"
                 flag=0
                 i=i+4
@@ -636,4 +661,5 @@ input_content =file.read()
 
 latex_parser(input_content)
 # print(parsed_content)
+# parsed_content=input_content
 text_to_audio(parsed_content)
