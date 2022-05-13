@@ -133,6 +133,9 @@ def util(content):
                 if(content[i] == '}' and started_bracket==1):
                     pass
                 else:
+                    if(content[i] == '~'):
+                        i=i+1
+                        continue
                     parsed_content = parsed_content + content[i]
 
                 i = i + 1
@@ -181,11 +184,12 @@ def util(content):
                 parsed_content += " implies "
             elif (content[i] == '&' and is_array == 1):
                 i = i + 1
-
+           
             elif (content[i] == '^'):  # write to the power of instead of ^{}
 
                 #global out
-                parsed_content = parsed_content + " to the power "
+                
+                
                 i = i + 1
 
                 j = i + 1
@@ -202,6 +206,19 @@ def util(content):
                     j = j + 1
                     temp = temp + 1
                 # if (temp > 5): file.write("(")  # TODO:decide
+                if(content[i+1:j-1]=='2'):
+                    parsed_content = parsed_content + " squared "
+                    i = j
+                    continue
+                elif(content[i+1:j-1]=='3'):
+                    parsed_content = parsed_content + " cube "
+                    i = j
+                    continue
+                elif(content[i+1:j-1]=='-1'):
+                    parsed_content = parsed_content + " inverse "
+                    i = j
+                    continue
+                parsed_content = parsed_content + " to the power "
                 util(content[i + 1:j - 1])
                 parsed_content += ","
                 # if (temp > 5): file.write(')')  #TODO:decide
@@ -234,28 +251,28 @@ def util(content):
 
         if (flag == 1):
             if(content[i:i+3]=="sin"):
-                parsed_content += " sine of "
+                parsed_content += " sine "
                 flag=0
                 i=i+4
             elif(content[i:i+3]=="cos"):
-                parsed_content += " cos of "
+                parsed_content += " cos "
                 flag=0
                 i=i+4
             elif(content[i:i+3]=="tan"):
-                parsed_content += " tan of "
+                parsed_content += " tan "
                 flag=0
                 i=i+4
             
             elif(content[i:i+3]=="sec"):
-                parsed_content += " secant of "
+                parsed_content += " secant  "
                 flag=0
                 i=i+4
             elif(content[i:i+5]=="cosec"):
-                parsed_content += " cosecant of "
+                parsed_content += " cosecant  "
                 flag=0
                 i=i+6
             elif(content[i:i+3]=="cot"):
-                parsed_content += " cot of "
+                parsed_content += " cot  "
                 flag=0
                 i=i+4
             elif(content[i:i+3]=="leq"):

@@ -1,4 +1,4 @@
-The symbol  sine of A is used as an abbreviation for 'the sine of the angle A'.  sine of A is not the product of 'sin' and A. 'sin' separated from A has no meaning. Similarly,  cos of A is not the product of 'cos' and A. Similar interpretations follow for other trigonometric ratios also.
+The symbol  sine A is used as an abbreviation for 'the sine of the angle A'.  sine A is not the product of 'sin' and A. 'sin' separated from A has no meaning. Similarly,  cos A is not the product of 'cos' and A. Similar interpretations follow for other trigonometric ratios also.
 
 Now, if we take a point P on the hypotenuse A C or a point Q on A C extended, of the right triangle ABC and draw PM perpendicular to AB and QN perpendicular to AB extended (see Fig. 8.6), how
 
@@ -20,18 +20,18 @@ AM ,by AB,=AP ,by AC,=MP ,by BC, .
 
 
  next column,  From this, we find   
-MP ,by AP,  next column, =BC ,by AC,= sine of A
-  next column,  Similarly,   AM ,by AP,=AB ,by AC,= cos of A, MP ,by AM,=BC ,by AB,= tan of A  and so on. 
+MP ,by AP,  next column, =BC ,by AC,= sine A
+  next column,  Similarly,   AM ,by AP,=AB ,by AC,= cos A, MP ,by AM,=BC ,by AB,= tan A  and so on. 
 
 
 
 This shows that the trigonometric ratios of angle A in  angle  PAM not differ from those of angle A in  angle  CAB.
 
-In the same way, you should check that the value of  sine of A (and also of other trigonometric ratios) remains the same in  angle  QAN also.
+In the same way, you should check that the value of  sine A (and also of other trigonometric ratios) remains the same in  angle  QAN also.
 
 From our observations, it is now clear that the values of the trigonometric ratios of an angle do not vary with the lengths of the sides of the triangle, if the angle remains the same.
 
-Note : For the sake of convenience, we may write  sine of  to the power 2, ~A,  cos of  to the power 2, ~A, etc., in place of ( sine of A) to the power 2,,( cos of A) to the power 2,, etc., respectively. But cosec A=( sine of A) to the power -1,  not equal to   sine of  to the power -1, ~A (it is called sine inverse A).  sine of  to the power -1, ~A has a different meaning, which will be discussed in higher classes. Similar conventions hold for the other trigonometric ratios as well. Sometimes, the Greek letter  (theta) is also used to denote an angle.
+Note : For the sake of convenience, we may write  sine  squared  A,  cos  squared  A, etc., in place of ( sine A) squared ,( cos A) squared , etc., respectively. But cosec A=( sine A) inverse   not equal to   sine  inverse  A (it is called sine inverse A).  sine  inverse  A has a different meaning, which will be discussed in higher classes. Similar conventions hold for the other trigonometric ratios as well. Sometimes, the Greek letter  (theta) is also used to denote an angle.
 
 We have defined six trigonometric ratios of an acute angle. If we know any one of the ratios, can we obtain the other ratios? Let us see.
 
@@ -44,7 +44,7 @@ Fig. 8.7 k is any positive number. To determine other
 trigonometric ratios for the angle A, we need to find the length of the third side AB. Do you remember the Pythagoras theorem? Let us use it to determine the required length AB.
 
 
-AB to the power 2,=AC to the power 2,-BC to the power 2,=(3 k) to the power 2,-(k) to the power 2,=8 k to the power 2,=(2  square root of 2, k) to the power 2,
+AB squared =AC squared -BC squared =(3 k) squared -(k) squared =8 k squared =(2  square root of 2, k) squared 
 
 
 Therefore,
@@ -62,7 +62,7 @@ AB=2  square root of 2, k   (Why is  AB  not -2  square root of 2, k  ?)
 Now,
 
 
- cos of A=AB ,by AC,=2  square root of 2, k ,by 3 k,=2  square root of 2, ,by 3,
+ cos A=AB ,by AC,=2  square root of 2, k ,by 3 k,=2  square root of 2, ,by 3,
 
 
 Similarly, you can obtain the other trigonometric ratios of the angle A.
